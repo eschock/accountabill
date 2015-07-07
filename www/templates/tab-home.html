@@ -1,0 +1,13 @@
+<ion-view view-title="Home">
+  <ion-content>
+	var form = $('<form>').attr({action: '/some_path', method: 'post'}),
+    text_field = $('<input>').attr({type: 'text', value: 'enter something here...'}),
+    button = $('<input>').attr({type: 'submit', value: 'Go!'});
+
+	form.append(text_field);
+	form.append(button);
+
+	$('body').append(form);  
+
+</ion-content>
+</ion-view>
